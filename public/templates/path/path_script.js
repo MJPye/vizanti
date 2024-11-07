@@ -36,12 +36,20 @@ colourpicker.addEventListener("input", (event) =>{
 	drawPath();
 });
 
+const throttle = document.getElementById('{uniqueID}_throttle');
+throttle.addEventListener("input", (event) =>{
+	saveSettings();
+	connect();
+});
+
+
 //Settings
 if(settings.hasOwnProperty("{uniqueID}")){
 	const loaded_data  = settings["{uniqueID}"];
 	topic = loaded_data.topic;
 
 	colourpicker.value = loaded_data.color ?? "#54db67";
+	throttle.value = loaded_data.throttle ?? 100;
 }else{
 	saveSettings();
 }
@@ -58,6 +66,7 @@ function saveSettings(){
 	settings["{uniqueID}"] = {
 		topic: topic,
 		color: colourpicker.value,
+		throttle: throttle.value	
 	}
 	settings.save();
 }
@@ -111,7 +120,8 @@ function connect(){
 		ros : rosbridge.ros,
 		name : topic,
 		messageType : 'nav_msgs/Path',
-		compression: "cbor"		
+		compression: "cbor",
+		throttle_rate: parseInt(throttle.value)
 	});
 
 	status.setWarn("No data received.");

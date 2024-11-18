@@ -4,7 +4,7 @@ html, body {
 	height: 100%;
 
 	color: white;
-	background-color: #273444;
+	background-color: #191A19;
 
 	font-family: Monospace;
 
@@ -195,8 +195,8 @@ object {
 	content: '';
 	display: block;
 	position: absolute;
-	background-color:#444444;
-	height: 7px;
+	background-color:#9715A3;
+	height: 3px;
 	width: 100%;
 	bottom: 0;
 	left: 0;
@@ -256,7 +256,7 @@ object {
 .modal_inner {
 	position: relative;
 
-	background-color: #273444;
+	background-color: #191A19;
 	height: auto;
 
 	border-style: outset;
@@ -272,7 +272,7 @@ object {
 .folder_modal {
 	background-color: rgba(0, 0, 0, 0.6);
 	border-style: solid;
-	border-color:#444444;
+	border-color:#9715A3;
 	border-width: 6px;
 	border-radius: 5px;
 	min-width: 70%;
@@ -652,7 +652,7 @@ button:hover{
 
 .loader {
 	display: inline-block;
-	border: 7px solid #273444;
+	border: 7px solid #191A19;
 	border-radius: 50%;
 	border-top: 7px solid #aeaeae;
 	width: 15px;
@@ -725,12 +725,7 @@ button:hover{
 
 .node-box {
 	background-color: #282828;
-	border-left: 6px solid gray;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	border-top-left-radius: 6px;
-	border-bottom-left-radius: 6px;
-	white-space: nowrap;
+	border-radius: 15px;
 	margin-bottom: 10px;
 	padding-left: 15px;
 	height: 40px;

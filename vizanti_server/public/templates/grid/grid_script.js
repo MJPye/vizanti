@@ -18,7 +18,7 @@ const ctx = canvas.getContext('2d', { colorSpace: 'srgb' });
 
 let grid_size = 1.0;
 let grid_thickness = 1;
-let grid_colour = "#3e556a";
+let grid_colour = "#179617";
 
 const colourpicker = document.getElementById("{uniqueID}_colorpicker");
 const linethickness = document.getElementById("{uniqueID}_thickness");

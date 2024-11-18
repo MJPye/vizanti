@@ -21,7 +21,7 @@ class Rosbridge {
 		this.connected = false;
 
 		this.ros = new ROSLIB.Ros({
-			url: 'ws://' + this.url + ':' + this.port
+			url: 'ws://' + this.url + '/ws/'
 		});
 
 		this.ros.on('connection', () => {

@@ -5,7 +5,7 @@ const params = paramsModule.default;
 
 class Rosbridge {
 
-	constructor(url) { 
+	constructor(url) {
 		this.url = url;
 		this.port = params.port_rosbridge;
 		this.compression = params.compression;
@@ -21,7 +21,7 @@ class Rosbridge {
 		this.connected = false;
 
 		this.ros = new ROSLIB.Ros({
-			url: 'ws://' + this.url + '/ws/'
+			url: 'wss://' + this.url + ':8443' + '/ws/'
 		});
 
 		this.ros.on('connection', () => {

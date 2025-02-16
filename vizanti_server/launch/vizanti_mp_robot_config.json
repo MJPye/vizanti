@@ -1,0 +1,131 @@
+{
+  "navbar": [
+    {
+      "type": "settings",
+      "id": "settings_default"
+    },
+    {
+      "type": "rosbridge",
+      "id": "rosbridge_default"
+    },
+    {
+      "type": "grid",
+      "id": "grid_default"
+    },
+    {
+      "type": "tf",
+      "id": "tf_default"
+    },
+    {
+      "type": "scan",
+      "id": "scan_autoID_0",
+      "container_id": "icon_container"
+    },
+    {
+      "type": "robotmodel",
+      "id": "robotmodel_autoID_1",
+      "container_id": "icon_container"
+    },
+    {
+      "type": "map",
+      "id": "map_autoID_2",
+      "container_id": "icon_container"
+    },
+    {
+      "type": "teleop",
+      "id": "teleop_autoID_3",
+      "container_id": "icon_container"
+    },
+    {
+      "type": "simplegoal",
+      "id": "simplegoal_autoID_4",
+      "container_id": "icon_container"
+    }
+  ],
+  "view": {
+    "center": {
+      "x": -1.3715473734037564,
+      "y": -0.15948025260916798
+    },
+    "scale": 146.2630359960861
+  },
+  "settings_default": {
+    "fixed_frame": "odom",
+    "background_color": "#191a19"
+  },
+  "tf_default": {
+    "show_names": true,
+    "show_axes": true,
+    "show_lines": true,
+    "scale": 1,
+    "frame_visibility": {
+      "base_footprint": false,
+      "odom": false,
+      "base_link": true,
+      "cliff_side_left": false,
+      "cliff_front_left": false,
+      "cliff_front_right": false,
+      "cliff_side_right": false,
+      "bump_left": false,
+      "bump_front_left": false,
+      "bump_front_center": false,
+      "bump_front_right": false,
+      "bump_right": false,
+      "ir_intensity_side_left": false,
+      "ir_intensity_left": false,
+      "ir_intensity_front_left": false,
+      "ir_intensity_front_center_left": false,
+      "ir_intensity_front_center_right": false,
+      "ir_intensity_front_right": false,
+      "ir_intensity_right": false,
+      "ir_omni": false,
+      "mouse": false,
+      "left_wheel": false,
+      "right_wheel": false,
+      "button_1": false,
+      "button_2": false,
+      "button_power": false,
+      "imu": false,
+      "laser": false,
+      "map": false
+    }
+  },
+  "grid_default": {
+    "size": 1,
+    "thickness": 1,
+    "colour": "#179617"
+  },
+  "uid": 5,
+  "scan_autoID_0": {
+    "topic": "/scan_throttled",
+    "opacity": "1",
+    "thickness": "0.02",
+    "color": "#ff0000",
+    "throttle": "2000"
+  },
+  "robotmodel_autoID_1": {
+    "frame": "base_link",
+    "sprite": "tortoise",
+    "length": "0.5"
+  },
+  "map_autoID_2": {
+    "topic": "/map",
+    "opacity": "0.7",
+    "colour_scheme": 0,
+    "throttle": "1000",
+    "use_timestamp": false
+  },
+  "teleop_autoID_3": {
+    "topic": "/cmd_vel",
+    "linear_velocity": 0.4,
+    "angular_velocity": 0.8,
+    "joy_offset_x": "50%",
+    "joy_offset_y": "85%",
+    "accel": 0.05,
+    "invert_angular": true,
+    "holonomic_swap": false
+  },
+  "simplegoal_autoID_4": {
+    "topic": "/goal_pose"
+  }
+}

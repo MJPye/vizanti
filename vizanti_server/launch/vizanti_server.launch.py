@@ -8,7 +8,7 @@ def generate_launch_description():
     port = launch.substitutions.LaunchConfiguration('port', default=5000)
     port_rosbridge = launch.substitutions.LaunchConfiguration('port_rosbridge', default=5001)
     flask_debug = launch.substitutions.LaunchConfiguration('flask_debug', default=True)
-    default_widget_config = launch.substitutions.LaunchConfiguration('default_widget_config', default='') #e.g. ~/your_custom_config.json
+    default_widget_config = launch.substitutions.LaunchConfiguration('default_widget_config', default='~/systemd-services/vizanti_mp_robot_config.json') #e.g. ~/your_custom_config.json
 
     #rosbridge internal params
     unregister_timeout = launch.substitutions.LaunchConfiguration('unregister_timeout', default='9999999.9')
